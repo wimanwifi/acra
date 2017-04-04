@@ -15,11 +15,11 @@
   ~ limitations under the License.
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="ch.acra.acra">
+          package="me.acra.acra">
 
     <application>
         <activity
-            android:name="org.acra.dialog.CrashReportDialog"
+            android:name="me.wimanacra.dialog.CrashReportDialog"
             android:theme="@android:style/Theme.Dialog"
             android:launchMode="singleInstance"
             android:excludeFromRecents="true"
@@ -27,13 +27,13 @@
             android:process=":acra"/>
 
         <service
-            android:name="org.acra.sender.SenderService"
+            android:name="me.wimanacra.sender.SenderService"
             android:exported="false"
             android:process=":acra" />
 
         <provider
             android:authorities="${applicationId}.acra"
-            android:name="org.acra.attachment.AcraContentProvider"
+            android:name="me.wimanacra.attachment.AcraContentProvider"
             android:exported="false"
             android:process=":acra"
             android:grantUriPermissions="true"/>
